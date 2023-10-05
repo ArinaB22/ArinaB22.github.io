@@ -45,10 +45,10 @@ main
     padding: 30px;
 }
 
-.image
+.centre-flex
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
