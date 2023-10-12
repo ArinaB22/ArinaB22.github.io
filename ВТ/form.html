@@ -50,7 +50,7 @@
         
         </div>
 
-        <div><form method="get">
+        <div class="div-flex"><form method="get">
                 <label for="tems">Укажите тему вопроса</label>
                 <select id="tems" name="tems">
                     <option value="tems1">Работа</option>
@@ -60,7 +60,7 @@
                 </select>
         </div>
 
-        <div>
+        <div class="div-flex"> 
             <div>
                 <label for="name">Ваше имя</label>
                 <input type="name" name="name" id="name">
@@ -77,8 +77,9 @@
 
         <div>
             <form action="" method="get">
-                <p><input type="text" name="question" placeholder="Ваш вопрос:" size="18" /></p>
-                <p><input type="submit" value="отправить вопрос">
+                <p><label for="email">Ваш вопрос:</label>
+                    <input type="text" name="question" placeholder="" size="18" />
+                <input type="submit" value="отправить вопрос">
                     <input type="reset" value="очистить"></p>  
             </form></div>
         </div>
