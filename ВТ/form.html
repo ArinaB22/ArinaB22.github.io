@@ -30,13 +30,6 @@
     <main>
         <div class="wrapper main-flex">
         <h1>Форма</h1>
-        
-        <div>
-        <form action="" method="get">
-            <input name="login"/>
-            <input type="submit" value="отправить вопрос">
-            <input type="reset" value="очистить">
-        </form></div>
 
         <div>
             <p>
@@ -57,6 +50,39 @@
         </p>
         </div>
 
+        <div><form method="get">
+            <p>
+                <label for="tems">Укажите тему вопроса</label>
+                <select id="tems" name="tems">
+                    <option value="tems1">Работа</option>
+                    <option value="tems2">Учеба</option>
+                    <option value="tems3">Учеба2</option>
+                    <option value="tems4">Нужной темы нет</option>
+                </select>
+            </p>
+        </div>
+
+        <div>
+            <div>
+                <label for="name">Ваше имя</label>
+                <input type="name" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Адрес почты</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Номер телефона</label>
+                <input type="phone" name="phone" id="phone">
+            </div>
+        </div>
+
+        <div>
+            <form action="" method="get">
+                <p><input type="text" name="question" placeholder="Ваш вопрос:" size="18" /></p>
+                <p><input type="submit" value="отправить вопрос">
+                    <input type="reset" value="очистить"></p>  
+            </form></div>
 
     </main>
     
