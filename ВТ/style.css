@@ -217,3 +217,11 @@ table
     justify-content: center;
     align-items: flex-start;
 }
+.div-flex-2
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
