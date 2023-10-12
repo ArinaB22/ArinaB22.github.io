@@ -43,6 +43,7 @@ footer
     margin: 5px;
     background-color: rgb(223, 185, 203);
     border-top: solid 3px black;
+    
 }
 
 ul
@@ -145,7 +146,8 @@ article > div > img:hover
     border-radius: 100%;
     width: 260px;
     height: 260px;
-    border: 15px dotted rgb(126, 122, 173);
+    border: 15px dotted rgb(87, 84, 124);
+
 }
 
 table
@@ -170,6 +172,7 @@ table
     margin: 0 auto;
     background-color: rgb(223, 185, 203);
     padding: 30px;
+
 }
 
 .main-flex
@@ -198,4 +201,19 @@ table
 {
     border: 4px solid rgb(241, 197, 122);
     box-shadow: 3px 5px 10px rgb(236, 163, 73);
+    border-radius: 10%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.div-flex{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
