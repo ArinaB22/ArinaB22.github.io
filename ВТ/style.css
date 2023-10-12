@@ -193,3 +193,9 @@ table
 {
     margin-left: 20px;
 }
+
+.main-form
+{
+    border: 4px solid rgb(241, 197, 122);
+    box-shadow: 3px 5px 10px rgb(236, 163, 73);
+}
