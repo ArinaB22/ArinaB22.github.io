@@ -150,11 +150,33 @@ article > div > img:hover
 
 }
 
+div > div > input
+{
+    height: 25px;
+}
+
+div > form > input
+{
+    height: 30px;
+}
+
 table
 {
     margin: 10px 0px 0px 0px;
     font-weight: 500;
     font-size: 20px;
+}
+
+select
+{
+    height: 25px;   
+}
+
+input, select
+{
+    border-radius: 0.5rem;
+    border-color:rgb(190 138 151);
+    background-color:rgb(198 227 234 / 50%);
 }
 
 .resume
@@ -197,3 +219,53 @@ table
     margin-left: 20px;
 }
 
+.main-form
+{
+    border: 4px solid rgb(190 138 151);
+    box-shadow: 3px 5px 15px rgb(145 132 135);
+    background-color:#ddc4d3;;
+    border-radius: 10%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.form-width
+{
+    width: 100%;
+}
+
+.div-flex{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.div-flex-2
+{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center
+}
+.div-flex-3
+{
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-flex-get
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
