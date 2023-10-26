@@ -1,2 +1,5 @@
 text.value = localStorage.getItem('text');
-localStorage.setItem('text', text.value)
+text.oninput = () =>  
+{ 
+  localStorage.setItem('text', text.value) 
+};
