@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head onclick="setWidth()">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Задание 1</title>
+    <script>
+        function setWidth()
+        {
+            document.getElementById("foto_1").style.width = "100px";
+        }
+        function setWidth_2()
+        {
+            document.getElementById("foto_1").style.width = "200px";
+        }
+        function setWidth_3()
+        {
+            document.getElementById("foto_1").style.width = "300px";
+        }
+    </script>
 </head>
 <body>
+    
     <header>
+        
         <div class="wrapper">
-        <h2>
+        <h2 id="title_h2">
             <span>Веб-технологии</span>
         </h2>
         <div class="header-img">
@@ -31,11 +47,16 @@
         <div class="wrapper main-flex">
         <h1>Фото</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi, magnam numquam iusto, architecto rerum, quos vitae itaque veniam pariatur reiciendis cupiditate commodi non repellendus quisquam consectetur maxime reprehenderit. Aliquam!  </p>
+      
+      <div>
+        <button onclick="setWidth()">100PX</button>
+        <button onclick="setWidth_2()">200PX</button>
+        <button onclick="setWidth_3()">300PX</button></div>
 
     <article>
                
             <div>
-                <img src="images/be.jpg" alt="Тут фото овечки" > 
+                <img src="images/be.jpg" alt="Тут фото овечки" id="foto_1"> 
             
                 <p>Овечка</p>
             </div>
@@ -83,5 +104,5 @@
         </div>
         </div>
     </footer>
-</body>
+    
 </html>

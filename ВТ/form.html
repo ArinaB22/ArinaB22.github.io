@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" onclick="setColor()">
+<head onclick="setColor()">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Задание 1</title>
+    <script>
+        function setColor()
+        {
+            //document.body.style.backgroundColor = "blue";
+            document.getElementById("color_set").style.backgroundColor = "pink";
+        }
+        
+        /*alert("head");
+        console.log("head");
+        document.write("head");*/
+        
+    </script>
 </head>
-<body>
-    <header>
+<body onclick="setColor()">
+    <script>
+        /*alert("Начало");
+        console.log("Начало");
+        document.write("Начало");*/
+        
+    </script>
+    <header id="color_set" onclick="setColor()">
         <div class="wrapper">
-        <h2>
+        <h2 onclick="setColor()">
             <span>Веб-технологии</span>
         </h2>
         <div class="header-img">
@@ -26,8 +44,10 @@
 
         </nav>
         </div>
+        
     </header>
-    <main>
+    <main id="mainn" onclick="setColor()">
+
     <div class="wrapper main-flex">
         
     <div class="main-form">
@@ -89,9 +109,12 @@
             </form>
         </div>
     </div>
+    
+ <!--<div><button onclick="setColor()">Изменить фон</button></div>-->
+    
     </main>
     
-    <footer>
+    <footer onclick="setColor()">
         <div class="wrapper footer-flex">
         <h5>2071, Булах А.А.</h5>
         <div>
@@ -102,5 +125,13 @@
         </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
+    <script>
+
+        /*alert("Закончился");
+        console.log("Закончился");
+        document.write("Конец");
+        document.getElementById("title_h2").innerText = "Привет";*/
+      
+    </script>
 </body>
 </html>
