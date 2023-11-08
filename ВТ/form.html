@@ -18,112 +18,140 @@
         
     </script>
 </head>
+
 <body onclick="setColor()">
+
     <script>
         /*alert("Начало");
         console.log("Начало");
         document.write("Начало");*/
         
     </script>
+
     <header id="color_set" onclick="setColor()">
         <div class="wrapper">
-        <h2 onclick="setColor()">
-            <span>Веб-технологии</span>
-        </h2>
-        <div class="header-img">
-            <img src="images/579af51cec9128ae0c3ee46796f6cebb.jpg" alt="логотип" width="220">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="resume.html">Резюме</a></li>
-                <li><a href="competencies.html">Компетенции</a></li>
-                <li><a href="foto.html">Фото</a></li>
-                <li><a href="form.html">Форма</a></li>
-            </ul>
-
-        </nav>
+            <h2 onclick="setColor()">
+                <span>Веб-технологии</span>
+            </h2>
+            <div class="header-img">
+                <img src="images/579af51cec9128ae0c3ee46796f6cebb.jpg" alt="логотип" width="220">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="resume.html">Резюме</a></li>
+                    <li><a href="competencies.html">Компетенции</a></li>
+                    <li><a href="foto.html">Фото</a></li>
+                    <li><a href="form.html">Форма</a></li>
+                </ul>
+            </nav>
         </div>
         
     </header>
-    <main id="mainn" onclick="setColor()">
 
-    <div class="wrapper main-flex">
-        
-    <div class="main-form">
-        
-        <div class="div-flex">
-            
-            <div>Как вам удобно получить вопрос?</div>
-            <label for="c_mail"> <input type="radio" name="com_tion" id="c_mail"> по почте</label>
-            <label for="c_tel"> <input type="radio" name="com_tion" id="c_tel"> по телефону</label>
-            <label for="c_none"> <input type="radio" name="com_tion" id="c_none"> не нужно отвечать</label>
-        
-        </div>
+    <main>
+        <div class="wrapper main-flex">
 
-        <div class="div-flex">
-            <label for="tems">Укажите тему вопроса</label>
-            <select id="tems" name="tems">
-                <option value="tems1">Работа</option>
-                <option value="tems2">Учеба</option>
-                <option value="tems3">Отдых</option>
-                <option value="tems4">Нужной темы нет</option>
-            </select>
-        </div>
+            <h3 id="textFromForm">
+                Тут будет текст!
+            </h3>
 
-        <div class="div-flex">
-            
-            <div>И еще один вопрос?</div>
-            <label for="chb1"> <input type="checkbox" name="chb1" id="chb1"> А</label>
-            <label for="chb2"> <input type="checkbox" name="chb2" id="chb2"> Б</label>
-            <label for="chb3"> <input type="checkbox" name="chb3" id="chb3"> В</label>
-        
-        </div>
-
-        <div class="form-width" >
-            <div class="div-flex-2">
-                <label for="name">Ваше имя</label>
-                <input type="name" name="name" id="name">
-            </div>
-            <div class="div-flex-2">
-                <label for="email">Адрес почты</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="div-flex-2">
-                <label for="phone">Телефон</label>
-                <input type="phone" name="phone" id="phone">
-            </div>
-        </div>
-
-        <div>
             <form action="" method="get" class="div-flex-3">
-                <label for="email">Ваш вопрос:</label>
-                <textarea id="area" cols="35"></textarea>
+                <div class="main-form">
+                    
+                    <div class="div-flex">
+                        
+                        <div>Как вам удобно получить вопрос?</div>
+                        <label for="c_mail"> 
+                        <input type="radio" name="com_tion" id="c_mail" value="по почте"> по почте</label>
+                        <label for="c_tel"> 
+                        <input type="radio" name="com_tion" id="c_tel" value="по телефону"> по телефону</label>
+                        <label for="c_none"> 
+                        <input type="radio" name="com_tion" id="c_none" value="не нужно отвечать"> не нужно отвечать</label>
+                    
+                    </div>
+
+                    <div class="div-flex">
+                        <label for="tems">Укажите тему вопроса</label>
+                        <select id="tems" name="tems">
+                            <option value="tems1">Работа</option>
+                            <option value="tems2">Учеба</option>
+                            <option value="tems3">Отдых</option>
+                            <option value="tems4">Нужной темы нет</option>
+                        </select>
+                    </div>
+
+                    <div class="div-flex">
+                        <div>И еще один вопрос?</div>
+                        <label for="chb1"> <input type="checkbox" name="chb1" id="chb1"> А</label>
+                        <label for="chb2"> <input type="checkbox" name="chb2" id="chb2"> Б</label>
+                        <label for="chb3"> <input type="checkbox" name="chb3" id="chb3"> В</label>
+                    </div>
+
+                    <div class="form-width" >
+                        <div class="div-flex-2">
+                            <label for="name">Ваше имя</label>
+                            <input type="name" name="name" id="name">
+                        </div>
+                        <div class="div-flex-2">
+                            <label for="email">Адрес почты</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="div-flex-2">
+                            <label for="phone">Телефон</label>
+                            <input type="phone" name="phone" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="div-flex-3">
+                        <label for="email">Ваш вопрос:</label>
+                        <textarea id="area" cols="35"></textarea>
+                    </div>
+                    
+                    <div class="div-flex-get form-width">
+                        <input type="submit" value="Отправить запрос">
+                        <input type="submit" value="Очистить поля">
+                    </div>
+                </div>
             </form>
+            <button onclick="exampleTestForm()" class="button">Отправить данные</button>
         </div>
+
+        <script>
+            function exampleTestForm()
+            {
+                let a = document.forms[0].area.value;
+                let b = document.getElementById("area").value;
+                console.log("Все работает "+ a + ", b = " + b);
+                let com_tion = document.forms[0].com_tion;
+                let str = "Все работает "+ a + "<br>";
+                for(i=0; i < com_tion.length; i++)
+                {
+                    if (com_tion[i].checked)
+                    {
+                        console.log(com_tion[i].value);
+                        str = str + com_tion[i].value;
+                    }
+                }
+                document.getElementById("textFromForm").innerHTML = str;
+            }
+        </script>
+
+        <!--<div><button onclick="setColor()">Изменить фон</button></div>-->
         
-        <div class="form-width">
-            <form action="" method="get" class="div-flex-get">
-                <input type="submit" value="Отправить запрос">
-                <input type="submit" value="Очистить поля">
-            </form>
-        </div>
-    </div>
-    
- <!--<div><button onclick="setColor()">Изменить фон</button></div>-->
-    
     </main>
     
     <footer onclick="setColor()">
         <div class="wrapper footer-flex">
-        <h5>2071, Булах А.А.</h5>
-        <div>
-            <a href="https://t.me/ariish_a" target="_blank"><img src="images/tgg.png" alt="Я в телеграмме" width="55"></a>
-            <a href="https://vk.com/id289130105" target="_blank"><img src="images/vk_png.png" alt="Я в вк" width="50"></a>
-            <a href="https://github.com/ArinaB22" target="_blank"><img src="images/git.png" alt="Я в гитхабе" width="50"></a>
-        </div>
+            <h5>2071, Булах А.А.</h5>
+            <div>
+                <a href="https://t.me/ariish_a" target="_blank"><img src="images/tgg.png" alt="Я в телеграмме" width="55"></a>
+                <a href="https://vk.com/id289130105" target="_blank"><img src="images/vk_png.png" alt="Я в вк" width="50"></a>
+                <a href="https://github.com/ArinaB22" target="_blank"><img src="images/git.png" alt="Я в гитхабе" width="50"></a>
+            </div>
         </div>
     </footer>
+
     <script type="text/javascript" src="script.js"></script>
     <script>
 
@@ -135,3 +163,4 @@
     </script>
 </body>
 </html>
+

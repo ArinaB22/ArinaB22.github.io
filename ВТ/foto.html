@@ -21,88 +21,116 @@
     </script>
 </head>
 <body>
-    
     <header>
         
         <div class="wrapper">
-        <h2 id="title_h2">
-            <span>Веб-технологии</span>
-        </h2>
-        <div class="header-img">
-            <img src="images/579af51cec9128ae0c3ee46796f6cebb.jpg" alt="логотип" width="220">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="resume.html">Резюме</a></li>
-                <li><a href="competencies.html">Компетенции</a></li>
-                <li><a href="foto.html">Фото</a></li>
-                <li><a href="form.html">Форма</a></li>
-            </ul>
-
-        </nav>
+            <h2 id="title_h2">
+                <span>Веб-технологии</span>
+            </h2>
+            <div class="header-img">
+                <img src="images/579af51cec9128ae0c3ee46796f6cebb.jpg" alt="логотип" width="220">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="resume.html">Резюме</a></li>
+                    <li><a href="competencies.html">Компетенции</a></li>
+                    <li><a href="foto.html">Фото</a></li>
+                    <li><a href="form.html">Форма</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
         <div class="wrapper main-flex">
-        <h1>Фото</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi, magnam numquam iusto, architecto rerum, quos vitae itaque veniam pariatur reiciendis cupiditate commodi non repellendus quisquam consectetur maxime reprehenderit. Aliquam!  </p>
-      
-      <div>
-        <button onclick="setWidth()">100PX</button>
-        <button onclick="setWidth_2()">300PX</button>
-        <button onclick="setWidth_3()">500PX</button></div>
-
-    <article>
-               
-            <div>
-                <img src="images/be.jpg" alt="Тут фото овечки"> 
-            
-                <p>Овечка</p>
-            </div>
-
-            <div>
-                <img src="images/кить.jpg" alt="И тут тоже кот" id="foto_2">
-            
-                <p>Кот</p>
-            </div>
-
-            <div>
-                <img src="images/хомяк.jpg" alt="Хомяяяк" >
-            
-                <p>Жорик</p>
-            </div>
+            <h1>Фото</h1>
         
-            <div>
-                <img src="images/cat.jpg" alt="Кот">
+            <div class="main-form-foto">
+                <form action="" method="get" class="div-flex">
+                <div>Выберите размер картинки</div>
+                <label for="100px"> <input type="radio" name="width_f" id="100px" value="100px">100px</label>
+                <label for="300px"> <input type="radio" name="width_f" id="300px" value="300px">300px</label>
+                <label for="500px"> <input type="radio" name="width_f" id="500px" value="500px">500px</label>
+                <div class="flex-foto">
+                    <label for="email">Название картинки:</label>
+                    <textarea id="foto" cols="15"></textarea>
+                </div>
+            </form>
+            <button onclick="TestFoto()" class="button">Отправить данные</button>
+            </div>
             
-                <p>Кот</p>
-            </div>
-
-            <div>
-                <img src="images/утка.jpg" alt="А тут уточка">
             
-                <p>Уточка</p>
-            </div>
+            <article>
+                <div>
+                    <img src="images/be.jpg" alt="Тут фото овечки" > 
+                
+                    <p>Овечка</p>
+                </div>
 
-            <div>
-                <img src="images/кот.jpg" alt="Опять кот" >
+                <div>
+                    <img src="images/кить.jpg" alt="И тут тоже кот" id="foto_2">
+                    
+                    <p id="name_foto">Кот</p>
+                </div>
 
-                <p>Кот</p>
+                <div>
+                    <img src="images/хомяк.jpg" alt="Хомяяяк" >
+                
+                    <p>Жорик</p>
+                </div>
+            
+                <div>
+                    <img src="images/cat.jpg" alt="Кот">
+                
+                    <p>Кот</p>
+                </div>
+
+                <div>
+                    <img src="images/утка.jpg" alt="А тут уточка">
+                
+                    <p>Уточка</p>
+                </div>
+
+                <div>
+                    <img src="images/кот.jpg" alt="Опять кот" >
+
+                    <p>Кот</p>
+                </div>
+            </article>
+            <div><button onclick="setWidth()">100PX</button>
+                <button onclick="setWidth_2()">300PX</button>
+                <button onclick="setWidth_3()">500PX</button>
             </div>
-        </article>
-    </div>
+    
+        </div>
+
+        <script>
+            function TestFoto()
+            {
+                let af = document.forms[0].foto.value;
+                let width_f = document.forms[0].width_f;
+                for(i=0; i < width_f.length; i++)
+                {
+                    if (width_f[i].checked)
+                    {
+                        document.getElementById("foto_2").style.width = width_f[i].value;
+                    }
+                }
+                document.getElementById("name_foto").innerHTML = af;
+            }
+        </script>
     </main>
     
     <footer>
         <div class="wrapper footer-flex">
-        <h5>2071, Булах А.А.</h5>
-        <div>
-            <a href="https://t.me/ariish_a" target="_blank"><img src="images/tgg.png" alt="Я в телеграмме" width="55"></a>
-            <a href="https://vk.com/id289130105" target="_blank"><img src="images/vk_png.png" alt="Я в вк" width="50"></a>
-            <a href="https://github.com/ArinaB22" target="_blank"><img src="images/git.png" alt="Я в гитхабе" width="50"></a>
-        </div>
+            <h5>2071, Булах А.А.</h5>
+            <div>
+                <a href="https://t.me/ariish_a" target="_blank"><img src="images/tgg.png" alt="Я в телеграмме" width="55"></a>
+                <a href="https://vk.com/id289130105" target="_blank"><img src="images/vk_png.png" alt="Я в вк" width="50"></a>
+                <a href="https://github.com/ArinaB22" target="_blank"><img src="images/git.png" alt="Я в гитхабе" width="50"></a>
+            </div>
         </div>
     </footer>
-    
+</body>
 </html>
