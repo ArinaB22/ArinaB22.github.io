@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/svg" href="images/lapa.svg">
     <title>Задание 1</title>
 </head>
 <body>
@@ -27,10 +28,44 @@
         </nav>
         </div>
     </header>
-    <main>
+    <main id="mainn">
+        <button class="fixed-button fixed"><img src="images/luna.png" alt="Кнопка «button»" width="50px"></button>
         <div class="wrapper main-flex">
         <h1>Компетенции</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia animi, magnam numquam iusto, architecto rerum, quos vitae itaque veniam pariatur reiciendis cupiditate commodi non repellendus quisquam consectetur maxime reprehenderit. Aliquam! </p> 
+      
+      
+
+        <div class="div-flex-3">
+            <label for="email">Ввод:</label>
+            <textarea id="the_area" cols="35"></textarea>
+            <button onclick="div()" class="button">Отправить данные</button>
+        </div>
+
+        <script >
+            
+            function div()
+            {
+                let b = document.getElementById("the_area").value;
+                let divv = document.createElement('div');
+                let buttonn = document.createElement('button');  
+                buttonn.className = "button-div-comp";              
+                divv.innerHTML = b + "<br>";
+                buttonn.innerHTML = "x";
+                
+                mainn.append(divv, buttonn);
+                setTimeout(() => divv.remove(), buttonn.onclick);
+                //buttonn.onclick = div_2;
+            }
+            function div_2()
+            {
+               divv.currentTarget.style.display = "none";
+               button.currentTarget.style.display = "none";
+            }
+                
+                
+            
+        </script>
         </div>
     </main>
     
